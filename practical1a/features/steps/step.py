@@ -1,6 +1,11 @@
 from behave import *
 from selenium import webdriver
+from time import sleep
 
+@given(u'Edge browser is Launched')
+def launchEdgeBrowser(context):
+    context.driver = webdriver.Edge()
+    
 @when(u'Open Formy page')
 def openFormyPage(context):
     context.driver.get("https://formy-project.herokuapp.com/form")

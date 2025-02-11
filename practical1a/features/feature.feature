@@ -1,7 +1,7 @@
 Feature: Verify Formy Website is valid
 
     Background: Common Steps
-        Given Opera browser is Launched
+        Given Edge browser is Launched
         When Open Formy page
 
     Scenario: Check Formy Title
