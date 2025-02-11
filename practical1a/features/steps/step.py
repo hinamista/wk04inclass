@@ -23,10 +23,8 @@ def closeBrowser(context):
 def inputName(context, firstName, lastName):
     context.driver.find_element("id", "first-name").send_keys(firstName)
     context.driver.find_element("id", "last-name").send_keys(lastName)
-    sleep(5)
 
 @then(u'Input multiple "{firstName}" and "{lastName}"')
 def inputMultipleName(context, firstName, lastName):
     context.driver.find_element("id", "first-name").send_keys(firstName)
     context.driver.find_element("id", "last-name").send_keys(lastName)
-    sleep(5)
